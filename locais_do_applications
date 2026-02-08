@@ -1,0 +1,19 @@
+/* Cor do switch (o botão de on e off) */
+switch:checked { 
+
+A cor azul quando clica com o botão direito na area de trabalha e passa o mouse em cima das opções está em:
+menu menuitem:hover, .menu menuitem:hover, .context-menu menuitem:hover { 
+
+/* Cor das bolinhas pra marcar uma opção (tipo no settings -> fonts e tem umas opções lá pra marcar bolinha */
+check:checked, radio:checked { 
+
+A cor azul quando clica em settings, por exemplo, e a opção clicada tem uma cor de fundo está em:
+
+row.activatable:selected { 
+
+e aqui:
+.view:selected:focus, .view:selected, .view text:selected:focus, textview text:selected:focus, .view text:selected, textview text:selected, iconview:selected:focus, iconview:selected, flowbox flowboxchild:selected, modelbutton.flat:selected, .menuitem.button.flat:selected, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected { 
+
+/* Botões de escolha tipo Left or Right do Settings -> Window Titlebars */
+notebook > header > tabs > arrow:checked, button:checked { 
+
