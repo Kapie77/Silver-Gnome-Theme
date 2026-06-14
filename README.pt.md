@@ -48,7 +48,7 @@ Digite o comando abaixo no terminal e um print será tirado dentro de 10 segundo
 
 ### THEME COLORS
 
-| Color | Hex |  
+| Cor | Hex |  
 |-----|------|
 | Verde principal | #0ee6a7 | 
 | Cinza principal | #cdd2d1| 
@@ -59,19 +59,31 @@ Digite o comando abaixo no terminal e um print será tirado dentro de 10 segundo
 | Branco do panel | rgba(255,255,255,0.75) | 
 
 <br>
-```switch:checked { /* Cor do switch (o botão de on e off) */```
+```bash
+switch:checked { /* Cor do switch (o botão de on e off) */
+```
 <br>
 A cor azul quando clica com o botão direito na area de trabalha e passa o mouse em cima das opções está em:
-```menu menuitem:hover, .menu menuitem:hover, .context-menu menuitem:hover {```
+```bash
+menu menuitem:hover, .menu menuitem:hover, .context-menu menuitem:hover {
+```
 <br>
 /* Cor das bolinhas pra marcar uma opção (tipo no settings -> fonts e tem umas opções lá pra marcar bolinha */
-```check:checked, radio:checked {```
+```bash
+check:checked, radio:checked {
+```
 <br>
 A cor azul quando clica em settings, por exemplo, e a opção clicada tem uma cor de fundo está em:
-```row.activatable:selected {```
+```bash
+row.activatable:selected {
+```
 <br>
 e aqui:
-```.view:selected:focus, .view:selected, .view text:selected:focus, textview text:selected:focus, .view text:selected, textview text:selected, iconview:selected:focus, iconview:selected, flowbox flowboxchild:selected, modelbutton.flat:selected, .menuitem.button.flat:selected, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected {```
+```bash
+.view:selected:focus, .view:selected, .view text:selected:focus, textview text:selected:focus, .view text:selected, textview text:selected, iconview:selected:focus, iconview:selected, flowbox flowboxchild:selected, modelbutton.flat:selected, .menuitem.button.flat:selected, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected {
+```
 <br>
 /* Botões de escolha tipo Left or Right do Settings -> Window Titlebars */
-```notebook > header > tabs > arrow:checked, button:checked {```
+```bash
+notebook > header > tabs > arrow:checked, button:checked {
+```
