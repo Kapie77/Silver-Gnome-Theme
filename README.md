@@ -39,17 +39,17 @@ Install the “Captiva-2” theme: https://www.gnome-look.org/p/1511577
 ### HOW INSTALL THE CURSOR THEME
 Install the “Twilight cursors” theme: https://www.gnome-look.org/p/1607387
 
-### HOW TO MAKE NOTIFICATIONS APPEAR FOR TESTING
+# HOW TO MAKE NOTIFICATIONS APPEAR FOR TESTING
 Type the command below into the terminal and a fake notification will appear.
 <br>
 ```notify-send "Title" "Test message"```
 
-### HOW TO TAKE A SCREENSHOT OF ANY AREA (SUCH AS THE LOCKSCREEN AND SCREENSHOT SCREEN)
+# HOW TO TAKE A SCREENSHOT OF ANY AREA (SUCH AS THE LOCKSCREEN AND SCREENSHOT SCREEN)
 Type the command below into the terminal, and a screenshot will be taken within 10 seconds:
 <br>
 ```gnome-screenshot -d 10```
 
-### THEME COLORS
+# THEME COLORS
 
 | Color | Hex |  
 |-----|------|
@@ -61,6 +61,7 @@ Type the command below into the terminal, and a screenshot will be taken within 
 | Lighter green/blue (from his glove) | #4bfffe |
 | White from the panel | rgba(255,255,255,0.75) | 
 
+<br>
 Cor do switch (o botão de on e off):
 ```bash
 switch:checked {
