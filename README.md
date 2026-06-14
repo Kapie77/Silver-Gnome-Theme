@@ -61,7 +61,7 @@ Type the command below into the terminal, and a screenshot will be taken within 
 | Lighter green/blue (from his glove) | #4bfffe |
 | White from the panel | rgba(255,255,255,0.75) | 
 
-## Helpers
+## Others
 Cor do switch (o botão de on e off):
 ```bash
 switch:checked {
