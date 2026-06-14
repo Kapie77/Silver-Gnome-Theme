@@ -61,7 +61,7 @@ Type the command below into the terminal, and a screenshot will be taken within 
 | Lighter green/blue (from his glove) | #4bfffe |
 | White from the panel | rgba(255,255,255,0.75) | 
 
-
+## Helpers
 Cor do switch (o botão de on e off):
 ```bash
 switch:checked {
@@ -82,7 +82,7 @@ The blue color when you click on settings, for example, and the option clicked h
 row.activatable:selected {
 ```
 
-e aqui:
+and here:
 ```bash
 .view:selected:focus, .view:selected, .view text:selected:focus, textview text:selected:focus, .view text:selected, textview text:selected, iconview:selected:focus, iconview:selected, flowbox flowboxchild:selected, modelbutton.flat:selected, .menuitem.button.flat:selected, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected {
 ```
