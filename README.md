@@ -33,7 +33,10 @@ To change the opacity, go to “Appearance” and under “Customize opacity,”
 Install the [Lock Screen Background](https://extensions.gnome.org/extension/1476/unlock-dialog-background/) extension from the Gnome Extensions website. Press the super key and open the Extensions application. In Lock Screen Background, click Settings, select the wallpaper, and you're done.
 The images to be used as wallpapers are in the “images” folder.
 
-### AS THE CURSOR THEME
+### HOW INSTALL ICONS THEME
+Install the “Captiva-2” theme: https://www.gnome-look.org/p/1511577
+
+### HOW INSTALL THE CURSOR THEME
 Install the “Twilight cursors” theme: https://www.gnome-look.org/p/1607387
 
 ### HOW TO MAKE NOTIFICATIONS APPEAR FOR TESTING
