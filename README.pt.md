@@ -58,7 +58,7 @@ Digite o comando abaixo no terminal e um print será tirado dentro de 10 segundo
 | Verde/azul mais claro (da luva dele) | #4bfffe |
 | Branco do panel | rgba(255,255,255,0.75) | 
 
-<br>
+
 Cor do switch (o botão de on e off):
 ```bash
 switch:checked {
