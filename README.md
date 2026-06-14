@@ -61,20 +61,32 @@ Type the command below into the terminal, and a screenshot will be taken within 
 | Lighter green/blue (from his glove) | #4bfffe |
 | White from the panel | rgba(255,255,255,0.75) | 
 
-<br>
-```switch:checked { /* Cor do switch (o botão de on e off) */```
-<br>
+Cor do switch (o botão de on e off):
+```bash
+switch:checked {
+```
+
 The blue color when you right-click on the workspace and hover over the options is in:
-```menu menuitem:hover, .menu menuitem:hover, .context-menu menuitem:hover {```
-<br>
-/* Color of the dots used to mark an option (like in settings -> fonts, where there are options to mark dots */
-```check:checked, radio:checked {```
-<br>
+```bash
+menu menuitem:hover, .menu menuitem:hover, .context-menu menuitem:hover {
+```
+
+Color of the dots used to mark an option (like in settings -> fonts, where there are options to mark dots:
+```bash
+check:checked, radio:checked {
+```
+
 The blue color when you click on settings, for example, and the option clicked has a background color is in:
-```row.activatable:selected {```
-<br>
+```bash
+row.activatable:selected {
+```
+
 e aqui:
-```.view:selected:focus, .view:selected, .view text:selected:focus, textview text:selected:focus, .view text:selected, textview text:selected, iconview:selected:focus, iconview:selected, flowbox flowboxchild:selected, modelbutton.flat:selected, .menuitem.button.flat:selected, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected {```
-<br>
-/* Selection buttons like Left or Right of Settings -> Window Titlebars */
-```notebook > header > tabs > arrow:checked, button:checked {```
+```bash
+.view:selected:focus, .view:selected, .view text:selected:focus, textview text:selected:focus, .view text:selected, textview text:selected, iconview:selected:focus, iconview:selected, flowbox flowboxchild:selected, modelbutton.flat:selected, .menuitem.button.flat:selected, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected {
+```
+
+Selection buttons like Left or Right of Settings -> Window Titlebars:
+```bash
+notebook > header > tabs > arrow:checked, button:checked {
+```
