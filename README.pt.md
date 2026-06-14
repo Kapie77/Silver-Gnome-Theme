@@ -58,26 +58,26 @@ Digite o comando abaixo no terminal e um print será tirado dentro de 10 segundo
 | Verde/azul mais claro (da luva dele) | #4bfffe |
 | Branco do panel | rgba(255,255,255,0.75) | 
 
-<br>
+
 ```bash
 switch:checked { /* Cor do switch (o botão de on e off) */
 ```
-<br>
+
 A cor azul quando clica com o botão direito na area de trabalha e passa o mouse em cima das opções está em:
 ```bash
 menu menuitem:hover, .menu menuitem:hover, .context-menu menuitem:hover {
 ```
-<br>
+
 /* Cor das bolinhas pra marcar uma opção (tipo no settings -> fonts e tem umas opções lá pra marcar bolinha */
 ```bash
 check:checked, radio:checked {
 ```
-<br>
+
 A cor azul quando clica em settings, por exemplo, e a opção clicada tem uma cor de fundo está em:
 ```bash
 row.activatable:selected {
 ```
-<br>
+
 e aqui:
 ```bash
 .view:selected:focus, .view:selected, .view text:selected:focus, textview text:selected:focus, .view text:selected, textview text:selected, iconview:selected:focus, iconview:selected, flowbox flowboxchild:selected, modelbutton.flat:selected, .menuitem.button.flat:selected, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected {
