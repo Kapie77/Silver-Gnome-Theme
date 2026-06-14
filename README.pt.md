@@ -30,8 +30,11 @@ Para mudar a opacidade vá em "Appearance" e em "Customize opacity" coloque 80%.
 Instale a extensão [Lock Screen Background](https://extensions.gnome.org/extension/1476/unlock-dialog-background/) no site Gnome Extensions. Pressione a tecla super e abra o aplicativo Extensões. Em Lock Screen Background, clique em Configurações, selecione o papel de parede e pronto.
 As imagens a serem usadas como papéis de parede estão na pasta “images”.
 
-### COMO O TEMA DO CURSOR
-Instale o tema de curso "Twilight cursors": https://www.gnome-look.org/p/1607387
+### COMO INSTALAR O TEMA DOS ICONES
+Instale o tema de icones “Captiva-2”: https://www.gnome-look.org/p/1511577
+
+### COMO INSTALAR O TEMA DO CURSOR
+Instale o tema de cursor "Twilight cursors": https://www.gnome-look.org/p/1607387
 
 ### COMO FAZER APARECER NOTIFICAÇÕES PARA TESTE
 Digite o comando abaixo no terminal e uma notifiação falsa irá aparecer.
