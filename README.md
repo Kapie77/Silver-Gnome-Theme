@@ -50,19 +50,17 @@ Type the command below into the terminal, and a screenshot will be taken within 
 ```gnome-screenshot -d 10```
 
 ### THEME COLORS
-Main green = #0ee6a7
-<br>
-Main gray = #cdd2d1
-<br>
-Transparent RGB gray = rgba(205,210,209, 0.8)
-<br>
-Transparent grayish white in RGB = rgba(255,255,255,0.91)
-<br>
-Dark green = #096d49
-<br>
-Lighter green/blue (from his glove) = #4bfffe
-<br>
-White from the panel = rgba(255,255,255,0.75)
+
+| Color | Hex |  
+|-----|------|
+| Main green | #0ee6a7 | 
+| Main gray | #cdd2d1| 
+| Transparent RGB gray | rgba(205,210,209, 0.8) |
+| Transparent grayish white in RGB | rgba(255,255,255,0.91) |
+| Dark green | #096d49 | 
+| Lighter green/blue (from his glove) | #4bfffe |
+| White from the panel | rgba(255,255,255,0.75) | 
+
 <br>
 ```switch:checked { /* Cor do switch (o botão de on e off) */```
 <br>
