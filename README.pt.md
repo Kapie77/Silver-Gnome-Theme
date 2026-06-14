@@ -36,17 +36,17 @@ Instale o tema de icones “Captiva-2”: https://www.gnome-look.org/p/1511577
 ### COMO INSTALAR O TEMA DO CURSOR
 Instale o tema de cursor "Twilight cursors": https://www.gnome-look.org/p/1607387
 
-### COMO FAZER APARECER NOTIFICAÇÕES PARA TESTE
+# COMO FAZER APARECER NOTIFICAÇÕES PARA TESTE
 Digite o comando abaixo no terminal e uma notifiação falsa irá aparecer.
 <br>
 ```notify-send "Título" "Mensagem de Teste"```
 
-### COMO TIRAR SCREENSHOT DE QUALQUER AREA (COMO LOCKSCREEN E TELA DO PRINT)
+# COMO TIRAR SCREENSHOT DE QUALQUER AREA (COMO LOCKSCREEN E TELA DO PRINT)
 Digite o comando abaixo no terminal e um print será tirado dentro de 10 segundos:
 <br>
 ```gnome-screenshot -d 10```
 
-### THEME COLORS
+# THEME COLORS
 
 | Cor | Hex |  
 |-----|------|
@@ -58,6 +58,7 @@ Digite o comando abaixo no terminal e um print será tirado dentro de 10 segundo
 | Verde/azul mais claro (da luva dele) | #4bfffe |
 | Branco do panel | rgba(255,255,255,0.75) | 
 
+<br>
 Cor do switch (o botão de on e off):
 ```bash
 switch:checked {
