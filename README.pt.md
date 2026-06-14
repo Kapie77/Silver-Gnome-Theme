@@ -55,22 +55,9 @@ Digite o comando abaixo no terminal e um print será tirado dentro de 10 segundo
 | Cinza em RGB transparente | rgba(205,210,209, 0.8) |
 | Branco meio cinza em RGB transparente | rgba(255,255,255,0.91) |
 | Verde escuro | #096d49 | 
-| Verde/azul mais claro (da luva dele) | 
+| Verde/azul mais claro (da luva dele) | #4bfffe |
 | Branco do panel | rgba(255,255,255,0.75) | 
 
-Verde principal = #0ee6a7
-<br>
-Cinza principal = #cdd2d1
-<br>
-Cinza em RGB transparente = rgba(205,210,209, 0.8)
-<br>
-Branco meio cinza em RGB transparente = rgba(255,255,255,0.91)
-<br>
-Verde escuro = #096d49
-<br>
-Verde/azul mais claro (da luva dele) = #4bfffe
-<br>
-Branco do panel = rgba(255,255,255,0.75)
 <br>
 ```switch:checked { /* Cor do switch (o botão de on e off) */```
 <br>
