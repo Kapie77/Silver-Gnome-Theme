@@ -1,0 +1,122 @@
+/* Notifications & Message Tray */
+/* Popup de notificações */
+.notification-banner {
+  min-height: 64px;
+  width: 34em;
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2);
+  color: black; /* Cor do texto do título */
+  background-color: rgba(255,255,255,0.91); /* Cor de fundo */
+  border-radius: 12px;
+  margin: 4px; 
+}
+/* Quando passa o mouse em cima do popup de notificação
+.notification-banner:hover {
+  color: #0ee6a7;
+}
+*/
+  .notification-banner .notification-actions {
+    spacing: 0; 
+  }
+
+/* ===========================================================
+     O CONTÉUDO ABAIXO SENÃO FOR DAQUI É DO "CALENDÁRIO"
+=============================================================*/
+/* Cor do título do popup de notificação 
+.message .message-title {
+  color: red;
+} */
+
+/* Cor do título do popup de notificação quando passa o mouse em cima */
+.message:hover .message-title,
+.message.hover .message-title,
+.message:focus .message-title,
+.message:active .message-title {
+  color: #4bfffe;
+}
+  .message:focus {
+    transition-duration: 100ms;
+    color: #303030;
+    background-color: #3e4650;
+    box-shadow: inset 0 0 0 2px rgba(53, 132, 228, 0.6); 
+  }
+    .message:focus:hover {
+      background-color: #454d56;
+      box-shadow: inset 0 0 0 2px rgba(53, 132, 228, 0.7); 
+    }
+    .message:focus:active {
+      background-color: #4c545d;
+      box-shadow: inset 0 0 0 2px rgba(53, 132, 228, 0.7); 
+    }
+  /* Quando passa o mouse em cima do popup de notificação */
+  .message:hover {
+    transition-duration: 100ms;
+    color: #303030;
+    background-color: #e2e2e2; 
+  }
+  .message:active {
+    transition-duration: 100ms;
+    color: #303030;
+    background-color: #dbdbdb; 
+  }
+  .message .message-icon-bin {
+    padding: 18px; 
+  }
+    .message .message-icon-bin:ltr {
+      padding-right: 6px; 
+    }
+    .message .message-icon-bin:rtl {
+      padding-left: 6px; 
+    }
+    .message .message-icon-bin > StIcon {
+      icon-size: 2.18em;
+      -st-icon-style: symbolic; 
+    }
+    .message .message-icon-bin > .fallback-app-icon {
+      width: 1.09em;
+      height: 1.09em; 
+    }
+  .message .message-content {
+    spacing: 4px;
+    padding: 9px;
+    margin-bottom: 8px; 
+  }
+  .message .message-title {
+    font-weight: bold;
+    /* HACK: the label should be baseline-aligned with a 1em label, fake this with some bottom padding */
+    padding-top: 0.57em; 
+  }
+  .message .message-secondary-bin {
+    padding: 0 8px; 
+  }
+    .message .message-secondary-bin > .event-time {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 9pt;
+      /* HACK: the label should be baseline-aligned with a 1em label, fake this with some bottom padding */
+      padding-bottom: 0.13em; 
+    }
+      .message .message-secondary-bin > .event-time:ltr {
+        text-align: right; 
+      }
+      .message .message-secondary-bin > .event-time:rtl {
+        text-align: left; 
+      }
+  .message .message-close-button {
+    color: #303030;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 99px;
+    padding: 5px;
+    margin: 1px; 
+  }
+    .message .message-close-button:hover {
+      background-color: rgba(200, 200, 200, 0.1); 
+    }
+    .message .message-close-button:active {
+      background-color: rgba(200, 200, 200, 0.2); 
+    }
+  .message .message-body {
+    color: #757575; 
+  }
+
+.url-highlighter {
+  link-color: #8fbbf0; 
+}

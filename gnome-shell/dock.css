@@ -1,0 +1,307 @@
+/* ========================
+        DOCK / DASH 
+===========================*/
+#dash {
+  margin-top: 12px; 
+}
+  #dash .placeholder {
+    background-image: none;
+    background-size: contain;
+    height: 32px;
+  }
+  #dash .empty-dash-drop-target {
+    width: 32px;
+    height: 32px; 
+  }
+  #dash .app-well-app-running-dot {
+    margin-bottom: 14px; 
+  }
+
+.dash-background {
+  background-color: rgba(205,210,209, 0.8);
+  border-radius: 20px;
+  padding: 12px;
+  spacing: 6px;
+  margin-bottom: 12px; 
+}
+
+.dash-item-container > * {
+  margin: 0 2px; 
+}
+
+.dash-item-container:ltr:first-child {
+  margin-left: 0; 
+}
+
+.dash-item-container:rtl:first-child {
+  margin-right: 0; 
+}
+
+.dash-item-container .app-well-app .overview-icon, .dash-item-container .grid-search-result .overview-icon {
+  padding: 6px; 
+}
+
+.dash-item-container .show-apps {
+  transition-duration: 400ms; 
+}
+  .dash-item-container .show-apps .overview-icon {
+    background-color: transparent; 
+  }
+  .dash-item-container .show-apps:hover .overview-icon {
+    background-color: rgba(255, 255, 255, 0.1); 
+  }
+  .dash-item-container .show-apps:selected .overview-icon, .dash-item-container .show-apps:focus .overview-icon {
+    background-color: rgba(255, 255, 255, 0.13); 
+  }
+    .dash-item-container .show-apps:selected .overview-icon:hover .overview-icon, .dash-item-container .show-apps:focus .overview-icon:hover .overview-icon {
+      background-color: rgba(255, 255, 255, 0.16); 
+    }
+    .dash-item-container .show-apps:selected .overview-icon:active .overview-icon, .dash-item-container .show-apps:focus .overview-icon:active .overview-icon {
+      background-color: rgba(255, 255, 255, 0.13); 
+    }
+  .dash-item-container .show-apps:active .overview-icon {
+    background-color: rgba(255, 255, 255, 0.16); 
+  }
+  .dash-item-container .show-apps:outlined .overview-icon, .dash-item-container .show-apps:checked .overview-icon {
+    background-color: rgba(255, 255, 255, 0.19); 
+  }
+    .dash-item-container .show-apps:outlined .overview-icon:active .overview-icon, .dash-item-container .show-apps:checked .overview-icon:active .overview-icon {
+      background-color: rgba(255, 255, 255, 0.22); 
+    }
+    .dash-item-container .show-apps:outlined .overview-icon:hover .overview-icon, .dash-item-container .show-apps:checked .overview-icon:hover .overview-icon {
+      background-color: rgba(255, 255, 255, 0.25); 
+    }
+  .dash-item-container .show-apps:drop .overview-icon {
+    border: 2px solid rgba(53, 132, 228, 0.8);
+    background-color: rgba(53, 132, 228, 0.2); 
+  }
+
+.dash-item-container .show-apps, .dash-item-container .app-well-app, .dash-item-container .grid-search-result {
+  padding-bottom: 12px; }
+
+/* Linha que separa os itens na dock que tão fixados */
+/* Nada funciona no separador, não sei porquê */
+.dash-separator {
+  width: 1px;
+  margin: 0 4px;
+  background-color: #4bfffe;
+  margin-bottom: 12px; 
+}
+
+/* Quando passa o mouse num icone da dash e aparece o título do programa */
+.dash-label {
+  color: white;
+  background-color: rgba(205,210,209, 0.8);
+  border-radius: 99px;
+  padding: 6px 12px;
+  text-align: center;
+  -y-offset: 8px; 
+}
+
+/* Botão Show Applications */
+.show-apps .show-apps-icon {
+  /* color: #4bfffe; */
+  background-image: url("../images/showappsicon.svg"); /* Coloca uma imagem de icone no botão show apps */
+  background-size: contain;  /* Deixa a imagem do tamanho certo do icone */
+  color: transparent; /* Retira a cor dos pontinhos do show apps para ficar invisivel e ficar só a imagem */
+}
+
+/* App Grid */
+.icon-grid {
+  row-spacing: 12px;
+  column-spacing: 12px;
+  max-row-spacing: 42px;
+  max-column-spacing: 42px;
+  page-padding-top: 24px;
+  page-padding-bottom: 24px;
+  page-padding-left: 18px;
+  page-padding-right: 18px; 
+}
+
+/* App Icons */
+.app-well-app, .grid-search-result {
+  transition-duration: 400ms; 
+}
+  .app-well-app .overview-icon, .grid-search-result .overview-icon {
+    background-color: transparent; 
+  }
+  .app-well-app:hover .overview-icon, .grid-search-result:hover .overview-icon {
+    background-color: rgba(255, 255, 255, 0.1); 
+  }
+  .app-well-app:selected .overview-icon, .grid-search-result:selected .overview-icon, .app-well-app:focus .overview-icon, .grid-search-result:focus .overview-icon {
+    background-color: rgba(255, 255, 255, 0.13); 
+  }
+    .app-well-app:selected .overview-icon:hover .overview-icon, .grid-search-result:selected .overview-icon:hover .overview-icon, .app-well-app:focus .overview-icon:hover .overview-icon, .grid-search-result:focus .overview-icon:hover .overview-icon {
+      background-color: rgba(255, 255, 255, 0.16); 
+    }
+    .app-well-app:selected .overview-icon:active .overview-icon, .grid-search-result:selected .overview-icon:active .overview-icon, .app-well-app:focus .overview-icon:active .overview-icon, .grid-search-result:focus .overview-icon:active .overview-icon {
+      background-color: rgba(255, 255, 255, 0.13); 
+    }
+  .app-well-app:active .overview-icon, .grid-search-result:active .overview-icon {
+    background-color: rgba(255, 255, 255, 0.16); 
+  }
+  .app-well-app:outlined .overview-icon, .grid-search-result:outlined .overview-icon, .app-well-app:checked .overview-icon, .grid-search-result:checked .overview-icon {
+    background-color: rgba(255, 255, 255, 0.19); 
+  }
+    .app-well-app:outlined .overview-icon:active .overview-icon, .grid-search-result:outlined .overview-icon:active .overview-icon, .app-well-app:checked .overview-icon:active .overview-icon, .grid-search-result:checked .overview-icon:active .overview-icon {
+      background-color: rgba(255, 255, 255, 0.22); 
+    }
+    .app-well-app:outlined .overview-icon:hover .overview-icon, .grid-search-result:outlined .overview-icon:hover .overview-icon, .app-well-app:checked .overview-icon:hover .overview-icon, .grid-search-result:checked .overview-icon:hover .overview-icon {
+      background-color: rgba(255, 255, 255, 0.25); 
+    }
+  .app-well-app:drop .overview-icon, .grid-search-result:drop .overview-icon {
+    border: 2px solid rgba(53, 132, 228, 0.8);
+    background-color: rgba(53, 132, 228, 0.2); 
+  }
+  .app-well-app .overview-icon, .grid-search-result .overview-icon {
+    padding: 12px; 
+  }
+  .app-well-app .overview-icon.overview-icon-with-label > StBoxLayout, .grid-search-result .overview-icon.overview-icon-with-label > StBoxLayout {
+    spacing: 6px; 
+  }
+
+.app-well-app.app-folder, .app-folder.grid-search-result {
+  transition-duration: 400ms; 
+}
+  .app-well-app.app-folder .overview-icon, .app-folder.grid-search-result .overview-icon {
+    background-color: rgba(255, 255, 255, 0.19); 
+  }
+  .app-well-app.app-folder:hover .overview-icon, .app-folder.grid-search-result:hover .overview-icon {
+    background-color: rgba(255, 255, 255, 0.1); 
+  }
+  .app-well-app.app-folder:selected .overview-icon, .app-folder.grid-search-result:selected .overview-icon, .app-well-app.app-folder:focus .overview-icon, .app-folder.grid-search-result:focus .overview-icon {
+    background-color: rgba(255, 255, 255, 0.13); 
+  }
+    .app-well-app.app-folder:selected .overview-icon:hover .overview-icon, .app-folder.grid-search-result:selected .overview-icon:hover .overview-icon, .app-well-app.app-folder:focus .overview-icon:hover .overview-icon, .app-folder.grid-search-result:focus .overview-icon:hover .overview-icon {
+      background-color: rgba(255, 255, 255, 0.16); 
+    }
+    .app-well-app.app-folder:selected .overview-icon:active .overview-icon, .app-folder.grid-search-result:selected .overview-icon:active .overview-icon, .app-well-app.app-folder:focus .overview-icon:active .overview-icon, .app-folder.grid-search-result:focus .overview-icon:active .overview-icon {
+      background-color: rgba(255, 255, 255, 0.13); 
+    }
+  .app-well-app.app-folder:active .overview-icon, .app-folder.grid-search-result:active .overview-icon {
+    background-color: rgba(255, 255, 255, 0.16); 
+  }
+  .app-well-app.app-folder:outlined .overview-icon, .app-folder.grid-search-result:outlined .overview-icon, .app-well-app.app-folder:checked .overview-icon, .app-folder.grid-search-result:checked .overview-icon {
+    background-color: rgba(255, 255, 255, 0.19); 
+  }
+    .app-well-app.app-folder:outlined .overview-icon:active .overview-icon, .app-folder.grid-search-result:outlined .overview-icon:active .overview-icon, .app-well-app.app-folder:checked .overview-icon:active .overview-icon, .app-folder.grid-search-result:checked .overview-icon:active .overview-icon {
+      background-color: rgba(255, 255, 255, 0.22); 
+    }
+    .app-well-app.app-folder:outlined .overview-icon:hover .overview-icon, .app-folder.grid-search-result:outlined .overview-icon:hover .overview-icon, .app-well-app.app-folder:checked .overview-icon:hover .overview-icon, .app-folder.grid-search-result:checked .overview-icon:hover .overview-icon {
+      background-color: rgba(255, 255, 255, 0.25); 
+    }
+  .app-well-app.app-folder:drop .overview-icon, .app-folder.grid-search-result:drop .overview-icon {
+    border: 2px solid rgba(53, 132, 228, 0.8);
+    background-color: rgba(53, 132, 228, 0.2); 
+  }
+
+.app-folder-dialog {
+  border-radius: 32px;
+  background-color: #1c1d1e; 
+}
+  .app-folder-dialog .folder-name-container {
+    padding: 24px 36px 0;
+    spacing: 12px;
+    /* FIXME: this is to keep the label in sync with the entry */ 
+  }
+    .app-folder-dialog .folder-name-container .folder-name-entry {
+      width: 300px; 
+    }
+    .app-folder-dialog .folder-name-container .folder-name-label {
+      padding: 5px 7px;
+      color: white; 
+    }
+    .app-folder-dialog .folder-name-container .edit-folder-button {
+      padding: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 99px; 
+    }
+      .app-folder-dialog .folder-name-container .edit-folder-button > StIcon {
+        icon-size: 1.09em; 
+      }
+  .app-folder-dialog .icon-grid {
+    row-spacing: 12px;
+    column-spacing: 30px;
+    page-padding-top: 0;
+    page-padding-bottom: 0;
+    page-padding-left: 0;
+    page-padding-right: 0; 
+  }
+  .app-folder-dialog .page-indicators {
+    margin-bottom: 18px; 
+  }
+
+.app-folder-dialog-container {
+  padding: 12px;
+  width: 640px;
+  height: 640px; 
+}
+
+/* Bolinha que fica embaixo de um icone ativo na dock */
+.app-well-app-running-dot {
+  height: 5px;
+  width: 5px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  background-color: white; /* Cor da bolinha do icone ativo da dock */
+}
+
+#notification-area {
+  color: green;
+  background-color: black;
+}
+
+.rename-folder-popup .rename-folder-popup-item {
+  spacing: 6px; 
+}
+  .rename-folder-popup .rename-folder-popup-item:ltr, .rename-folder-popup .rename-folder-popup-item:rtl {
+    padding: 0 12px; 
+  }
+
+.page-indicator {
+  padding: 6px 12px 0;
+  transition-duration: 400ms; 
+}
+  .page-indicator .page-indicator-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: white; 
+  }
+
+.apps-scroll-view {
+  padding: 0; 
+}
+
+.system-action-icon {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 99px;
+  icon-size: 48px; 
+}
+
+.page-navigation-hint {
+  width: 300px; 
+}
+  .page-navigation-hint.dnd {
+    background: rgba(255, 255, 255, 0.1); 
+  }
+  .page-navigation-hint.next:ltr, .page-navigation-hint.previous:rtl {
+    background-gradient-start: rgba(255, 255, 255, 0.05);
+    background-gradient-end: transparent;
+    background-gradient-direction: horizontal;
+    border-radius: 24px 0px 0px 24px; 
+  }
+  .page-navigation-hint.previous:ltr, .page-navigation-hint.next:rtl {
+    background-gradient-start: transparent;
+    background-gradient-end: rgba(255, 255, 255, 0.05);
+    background-gradient-direction: horizontal;
+    border-radius: 0px 24px 24px 0px; 
+  }
+
+.page-navigation-arrow {
+  margin: 6px;
+  width: 24px;
+  height: 24px; 
+}

@@ -1,0 +1,220 @@
+/* SCREENSHOT (PRINT) */
+/* Tela de print */
+.screenshot-ui-panel, .workspace-switcher, .switcher-list, .resize-popup, .osd-monitor-label, .osd-window {
+  color: white;
+  background-color: rgba(255,255,255,0.75); /* Cor de fundo dos botões Selection, Screen e Window */
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  border-radius: 999px;
+  padding: 12px; 
+}
+.screenshot-ui-panel {
+  border-radius: 37px;
+  padding: 18px;
+  padding-bottom: 12px;
+  margin-bottom: 4em;
+  spacing: 12px; 
+}
+
+/* Fundo dos botões Selection, Screen e Window */
+.screenshot-ui-type-button {
+  transition-duration: 100ms;
+  background-color: #0ee6a7; /* Cor de fundo dos botões selection, screen e window */
+}
+
+/* Icone de seta */
+.screenshot-ui-show-pointer-button {
+  transition-duration: 100ms;
+  background-color: #0ee6a7; /* Cor do icone de seta */
+}
+.screenshot-ui-show-pointer-button {
+  border-radius: 99px;
+  padding: 12px !important; 
+}
+.screenshot-ui-show-pointer-button StIcon {
+    icon-size: 1.09em; 
+}
+
+/* Botão de fechar */
+.window-close, .screenshot-ui-close-button {
+  background-color: #cdd2d1; /* Botão de fechar do screenshot (print) */
+  color: white;
+  border-radius: 99px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  padding: 3px;
+  height: 30px;
+  width: 30px;
+  transition-duration: 100ms; 
+}
+  .window-close StIcon, .screenshot-ui-close-button StIcon {
+    icon-size: 24px; 
+  }
+  .window-close:hover, .screenshot-ui-close-button:hover {
+    background-color: rgba(238, 235, 235, 0.95); 
+  }
+  .window-close:active, .screenshot-ui-close-button:active {
+    background-color: rgba(238, 235, 235, 0.95); 
+  }
+
+  .screenshot-ui-close-button {
+  padding: 6px !important;
+  margin-top: 12px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); 
+}
+  .screenshot-ui-close-button.left {
+    margin-left: 12px; 
+  }
+  .screenshot-ui-close-button.right {
+    margin-right: 12px; 
+  }
+
+.workspace-background {
+  border-radius: 30px;
+  box-shadow: 0 4px 16px 4px rgba(0, 0, 0, 0.3); 
+}
+
+/* Botão de gravar */
+.screenshot-ui-capture-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 99px;
+  border: 4px white;
+  padding: 4px; 
+}
+  .screenshot-ui-capture-button .screenshot-ui-capture-button-circle {
+    background-color: white;
+    transition-duration: 200ms;
+    border-radius: 99px; 
+  }
+    .screenshot-ui-capture-button .screenshot-ui-capture-button-circle:hover, .screenshot-ui-capture-button .screenshot-ui-capture-button-circle:focus {
+      background-color: #e2e2e1; 
+    }
+  .screenshot-ui-capture-button:hover .screenshot-ui-capture-button-circle, .screenshot-ui-capture-button:focus .screenshot-ui-capture-button-circle {
+    background-color: #d9d9d9; 
+  }
+  .screenshot-ui-capture-button:active .screenshot-ui-capture-button-circle {
+    background-color: gray; 
+  }
+  .screenshot-ui-capture-button:cast .screenshot-ui-capture-button-circle {
+    background-color: #c01c28; 
+  }
+  .screenshot-ui-capture-button:cast:hover .screenshot-ui-capture-button-circle, .screenshot-ui-capture-button:cast:focus .screenshot-ui-capture-button-circle {
+    background-color: #d61f2d; 
+  }
+  .screenshot-ui-capture-button:cast:active .screenshot-ui-capture-button-circle {
+    background-color: #a11722; 
+  }
+
+/* Fundo dos icones do screenshot e screencast (icone de tirar screenshot/print e gravar) */
+.screenshot-ui-shot-cast-container {
+  background-color: #0ee6a7;
+  border-radius: 16px;
+  padding: 3px;
+  spacing: 3px; 
+}
+  .screenshot-ui-shot-cast-container:ltr {
+    margin-left: 3px; 
+  }
+  .screenshot-ui-shot-cast-container:rtl {
+    margin-right: 3px; 
+  }
+
+.screenshot-ui-shot-cast-button {
+  padding: 6px 12px;
+  background-color: transparent; /* Cor de fundo do icone de tirar screenshot/print e gravar em segundo plano */
+  border-radius: 13px; 
+}
+  .screenshot-ui-shot-cast-button:hover, .screenshot-ui-shot-cast-button:focus {
+    background-color: #3c3c3c; 
+  }
+  .screenshot-ui-shot-cast-button:active {
+    background-color: #5b5b5b; 
+  }
+  .screenshot-ui-shot-cast-button:checked {
+    background-color: white;
+    color: black; 
+  }
+  .screenshot-ui-shot-cast-button StIcon {
+    icon-size: 1.09em; 
+  }
+
+.screenshot-ui-area-indicator-shade {
+  background-color: rgba(0, 0, 0, 0.3); 
+}
+
+.screenshot-ui-area-selector .screenshot-ui-area-indicator-shade {
+  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo da tela quando o print vai ser tirado */
+}
+
+.screenshot-ui-area-selector .screenshot-ui-area-indicator-selection {
+  border: 2px white; 
+}
+
+.screenshot-ui-area-selector-handle {
+  border-radius: 99px;
+  background-color: white;
+  box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.2);
+  width: 24px;
+  height: 24px; 
+}
+
+.screenshot-ui-window-selector {
+  background-color: #232323; 
+}
+  .screenshot-ui-window-selector .screenshot-ui-window-selector-window-container {
+    margin: 100px; 
+  }
+  .screenshot-ui-window-selector:primary-monitor .screenshot-ui-window-selector-window-container {
+    margin-bottom: 200px; 
+  }
+
+.screenshot-ui-window-selector-window-border {
+  transition-duration: 200ms;
+  border-radius: 16px;
+  border: 6px transparent; 
+}
+
+.screenshot-ui-window-selector-check {
+  transition-duration: 200ms;
+  color: transparent;
+  border-radius: 99px;
+  border-width: 12px;
+  icon-size: 24px; 
+}
+
+.screenshot-ui-window-selector-window:hover .screenshot-ui-window-selector-window-border {
+  border-color: #185fb4; 
+}
+
+.screenshot-ui-window-selector-window:checked .screenshot-ui-window-selector-window-border {
+  border-color: #2e74dd;
+  background-color: rgba(53, 132, 228, 0.2); 
+}
+
+.screenshot-ui-window-selector-window:checked .screenshot-ui-window-selector-check {
+  color: #fff;
+  background-color: #2e74dd; 
+}
+
+.screenshot-ui-screen-selector {
+  transition-duration: 200ms;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+  .screenshot-ui-screen-selector:hover {
+    background-color: rgba(0, 0, 0, 0.3); 
+  }
+  .screenshot-ui-screen-selector:active {
+    background-color: rgba(0, 0, 0, 0.7); 
+  }
+  .screenshot-ui-screen-selector:checked {
+    background-color: transparent;
+    border: 2px white; 
+  }
+
+.screenshot-ui-tooltip {
+  color: white;
+  background-color: #232323;
+  border-radius: 99px;
+  padding: 6px 12px;
+  text-align: center;
+  -y-offset: 24px; 
+}

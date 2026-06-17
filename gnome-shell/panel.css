@@ -1,0 +1,209 @@
+/* ====================================
+        Panel (Barra superior)
+=======================================*/
+#panel {
+
+	background-gradient-direction: vertical;
+  background-gradient-start: rgba(248,248,248,1);
+  background-gradient-end: rgba(187,187,187,1);
+
+  border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-radius: 0px; 
+
+  text-shadow: 0 0.9px 0.9px rgba(255,255,255,0.4);
+  font-weight: bold;
+  height: 2.2em;
+  transition-duration: 250ms;
+
+  /* Arredonda o panel */
+  border: 0.2px solid rgba(0,0,0,0.6);
+  border-radius: 999px;
+  padding: 5px; /* Tamanho da barra */
+  margin: 5px; /* Margem */
+}
+ #panel:overview, #panel.unlock-screen, #panel.login-screen, #panel.lock-screen {
+  background-color: rgba(255,255,255,0.75);
+}
+  #panel .panel-button {
+    font-weight: bold;
+    color: #ffffff; /* Cor dos textos do panel */
+    -natural-hpadding: 12px;
+    -minimum-hpadding: 6px;
+    transition-duration: 150ms;
+    border: 3px solid transparent;
+    border-radius: 99px; 
+  }
+    #panel .panel-button.clock-display .clock {
+      transition-duration: 150ms;
+      border: 3px solid transparent;
+      border-radius: 99px; 
+    }
+    /* Bolinha de notificação do lado do calendário */
+    #panel .clock-display > * > *:last-child {
+      color: #4bfffe; /* Cor da bolinha. Muda a cor do texto quando clica no botão de calendário também */
+    }
+    #panel .panel-button.screen-recording-indicator {
+      box-shadow: inset 0 0 0 100px #c01c28; 
+    }
+      #panel .panel-button.screen-recording-indicator StBoxLayout {
+        spacing: 6px; 
+      }
+      #panel .panel-button.screen-recording-indicator StIcon {
+        icon-size: 1.09em; 
+      }
+    #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
+      box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.1); 
+    }
+      #panel .panel-button:active.clock-display, #panel .panel-button:overview.clock-display, #panel .panel-button:focus.clock-display, #panel .panel-button:checked.clock-display {
+        box-shadow: none; 
+      }
+        #panel .panel-button:active.clock-display .clock, #panel .panel-button:overview.clock-display .clock, #panel .panel-button:focus.clock-display .clock, #panel .panel-button:checked.clock-display .clock {
+          box-shadow: inset 0 0 0 100px #cdd2d1;  /* Cor quando clica no botão do calendário */
+        }
+      #panel .panel-button:active.screen-recording-indicator, #panel .panel-button:overview.screen-recording-indicator, #panel .panel-button:focus.screen-recording-indicator, #panel .panel-button:checked.screen-recording-indicator {
+        box-shadow: inset 0 0 0 100px rgba(192, 28, 40, 0.85); 
+      }
+    #panel .panel-button:hover {
+      box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.2);  /* Quando passa o mouse em cima do botões do panel */
+    }
+      #panel .panel-button:hover.clock-display {
+        box-shadow: none; 
+      }
+        /* Quando passa o mouse em cima do botão do calendário */
+        #panel .panel-button:hover.clock-display .clock {
+          box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.2); /* antiga cor era: rgba(0, 0, 0, 0.1) */
+        }
+      #panel .panel-button:hover.screen-recording-indicator {
+        box-shadow: inset 0 0 0 100px rgba(192, 28, 40, 0.9); 
+      }
+    #panel .panel-button:active:hover, #panel .panel-button:overview:hover, #panel .panel-button:focus:hover, #panel .panel-button:checked:hover {
+      box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.1); 
+    }
+      #panel .panel-button:active:hover.clock-display, #panel .panel-button:overview:hover.clock-display, #panel .panel-button:focus:hover.clock-display, #panel .panel-button:checked:hover.clock-display {
+        box-shadow: none; 
+      }
+        #panel .panel-button:active:hover.clock-display .clock, #panel .panel-button:overview:hover.clock-display .clock, #panel .panel-button:focus:hover.clock-display .clock, #panel .panel-button:checked:hover.clock-display .clock {
+          box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.1); 
+        }
+      #panel .panel-button:active:hover.screen-recording-indicator, #panel .panel-button:overview:hover.screen-recording-indicator, #panel .panel-button:focus:hover.screen-recording-indicator, #panel .panel-button:checked:hover.screen-recording-indicator {
+        box-shadow: inset 0 0 0 100px rgba(192, 28, 40, 0.8); 
+      }
+    #panel .panel-button .system-status-icon {
+      icon-size: 1.17em;
+      padding: 5px;
+      margin: 0 4px; 
+    }
+    #panel .panel-button .panel-status-indicators-box .system-status-icon,
+    #panel .panel-button .panel-status-menu-box .system-status-icon {
+      margin: 0; 
+    }
+    #panel .panel-button .app-menu-icon {
+      -st-icon-style: symbolic; 
+    }
+    #panel .panel-button#panelActivities {
+      -natural-hpadding: 18px; 
+    }
+  #panel.unlock-screen .panel-button:active, #panel.unlock-screen .panel-button:overview, #panel.unlock-screen .panel-button:focus, #panel.unlock-screen .panel-button:checked, #panel.login-screen .panel-button:active, #panel.login-screen .panel-button:overview, #panel.login-screen .panel-button:focus, #panel.login-screen .panel-button:checked, #panel:overview .panel-button:active, #panel:overview .panel-button:overview, #panel:overview .panel-button:focus, #panel:overview .panel-button:checked {
+    box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.15); 
+  }
+    #panel.unlock-screen .panel-button:active.clock-display, #panel.unlock-screen .panel-button:overview.clock-display, #panel.unlock-screen .panel-button:focus.clock-display, #panel.unlock-screen .panel-button:checked.clock-display, #panel.login-screen .panel-button:active.clock-display, #panel.login-screen .panel-button:overview.clock-display, #panel.login-screen .panel-button:focus.clock-display, #panel.login-screen .panel-button:checked.clock-display, #panel:overview .panel-button:active.clock-display, #panel:overview .panel-button:overview.clock-display, #panel:overview .panel-button:focus.clock-display, #panel:overview .panel-button:checked.clock-display {
+      box-shadow: none; 
+    }
+      #panel.unlock-screen .panel-button:active.clock-display .clock, #panel.unlock-screen .panel-button:overview.clock-display .clock, #panel.unlock-screen .panel-button:focus.clock-display .clock, #panel.unlock-screen .panel-button:checked.clock-display .clock, #panel.login-screen .panel-button:active.clock-display .clock, #panel.login-screen .panel-button:overview.clock-display .clock, #panel.login-screen .panel-button:focus.clock-display .clock, #panel.login-screen .panel-button:checked.clock-display .clock, #panel:overview .panel-button:active.clock-display .clock, #panel:overview .panel-button:overview.clock-display .clock, #panel:overview .panel-button:focus.clock-display .clock, #panel:overview .panel-button:checked.clock-display .clock {
+        box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.15); 
+      }
+    #panel.unlock-screen .panel-button:active.screen-recording-indicator, #panel.unlock-screen .panel-button:overview.screen-recording-indicator, #panel.unlock-screen .panel-button:focus.screen-recording-indicator, #panel.unlock-screen .panel-button:checked.screen-recording-indicator, #panel.login-screen .panel-button:active.screen-recording-indicator, #panel.login-screen .panel-button:overview.screen-recording-indicator, #panel.login-screen .panel-button:focus.screen-recording-indicator, #panel.login-screen .panel-button:checked.screen-recording-indicator, #panel:overview .panel-button:active.screen-recording-indicator, #panel:overview .panel-button:overview.screen-recording-indicator, #panel:overview .panel-button:focus.screen-recording-indicator, #panel:overview .panel-button:checked.screen-recording-indicator {
+      box-shadow: inset 0 0 0 100px rgba(192, 28, 40, 0.85); 
+    }
+  #panel.unlock-screen .panel-button:hover, #panel.login-screen .panel-button:hover, #panel:overview .panel-button:hover {
+    box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.1); 
+  }
+    #panel.unlock-screen .panel-button:hover.clock-display, #panel.login-screen .panel-button:hover.clock-display, #panel:overview .panel-button:hover.clock-display {
+      box-shadow: none; 
+    }
+      #panel.unlock-screen .panel-button:hover.clock-display .clock, #panel.login-screen .panel-button:hover.clock-display .clock, #panel:overview .panel-button:hover.clock-display .clock {
+        box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.1); 
+      }
+    #panel.unlock-screen .panel-button:hover.screen-recording-indicator, #panel.login-screen .panel-button:hover.screen-recording-indicator, #panel:overview .panel-button:hover.screen-recording-indicator {
+      box-shadow: inset 0 0 0 100px rgba(192, 28, 40, 0.9); 
+    }
+  #panel.unlock-screen .panel-button:active:hover, #panel.unlock-screen .panel-button:overview:hover, #panel.unlock-screen .panel-button:focus:hover, #panel.unlock-screen .panel-button:checked:hover, #panel.login-screen .panel-button:active:hover, #panel.login-screen .panel-button:overview:hover, #panel.login-screen .panel-button:focus:hover, #panel.login-screen .panel-button:checked:hover, #panel:overview .panel-button:active:hover, #panel:overview .panel-button:overview:hover, #panel:overview .panel-button:focus:hover, #panel:overview .panel-button:checked:hover {
+    box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.2); 
+  }
+    #panel.unlock-screen .panel-button:active:hover.clock-display, #panel.unlock-screen .panel-button:overview:hover.clock-display, #panel.unlock-screen .panel-button:focus:hover.clock-display, #panel.unlock-screen .panel-button:checked:hover.clock-display, #panel.login-screen .panel-button:active:hover.clock-display, #panel.login-screen .panel-button:overview:hover.clock-display, #panel.login-screen .panel-button:focus:hover.clock-display, #panel.login-screen .panel-button:checked:hover.clock-display, #panel:overview .panel-button:active:hover.clock-display, #panel:overview .panel-button:overview:hover.clock-display, #panel:overview .panel-button:focus:hover.clock-display, #panel:overview .panel-button:checked:hover.clock-display {
+      box-shadow: none; 
+    }
+      #panel.unlock-screen .panel-button:active:hover.clock-display .clock, #panel.unlock-screen .panel-button:overview:hover.clock-display .clock, #panel.unlock-screen .panel-button:focus:hover.clock-display .clock, #panel.unlock-screen .panel-button:checked:hover.clock-display .clock, #panel.login-screen .panel-button:active:hover.clock-display .clock, #panel.login-screen .panel-button:overview:hover.clock-display .clock, #panel.login-screen .panel-button:focus:hover.clock-display .clock, #panel.login-screen .panel-button:checked:hover.clock-display .clock, #panel:overview .panel-button:active:hover.clock-display .clock, #panel:overview .panel-button:overview:hover.clock-display .clock, #panel:overview .panel-button:focus:hover.clock-display .clock, #panel:overview .panel-button:checked:hover.clock-display .clock {
+        box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.2); 
+      }
+    #panel.unlock-screen .panel-button:active:hover.screen-recording-indicator, #panel.unlock-screen .panel-button:overview:hover.screen-recording-indicator, #panel.unlock-screen .panel-button:focus:hover.screen-recording-indicator, #panel.unlock-screen .panel-button:checked:hover.screen-recording-indicator, #panel.login-screen .panel-button:active:hover.screen-recording-indicator, #panel.login-screen .panel-button:overview:hover.screen-recording-indicator, #panel.login-screen .panel-button:focus:hover.screen-recording-indicator, #panel.login-screen .panel-button:checked:hover.screen-recording-indicator, #panel:overview .panel-button:active:hover.screen-recording-indicator, #panel:overview .panel-button:overview:hover.screen-recording-indicator, #panel:overview .panel-button:focus:hover.screen-recording-indicator, #panel:overview .panel-button:checked:hover.screen-recording-indicator {
+      box-shadow: inset 0 0 0 100px rgba(192, 28, 40, 0.8); 
+    }
+  #panel .panel-status-indicators-box,
+  #panel .panel-status-menu-box {
+    spacing: 2px; 
+  }
+  #panel .power-status.panel-status-indicators-box {
+    spacing: 0; 
+  }
+  #panel .screencast-indicator,
+  #panel .remote-access-indicator {
+    color: #cd9309; 
+  }
+
+#appMenu {
+  spacing: 6px; }
+  #appMenu .label-shadow {
+    color: transparent; 
+  }
+
+#appMenu .panel-status-menu-box {
+  padding: 0 6px;
+  spacing: 6px; 
+}
+
+.clock-display-box {
+  spacing: 2px; }
+  .clock-display-box .clock {
+    padding-left: 12px;
+    padding-right: 12px; 
+  }
+
+/* Activities Ripple */
+.ripple-box {
+  background-color: rgba(233, 242, 252, 0.3);
+  box-shadow: 0 0 2px 2px #8fbbf0;
+  width: 52px;
+  height: 52px;
+  border-radius: 0 0 52px 0; 
+}
+  .ripple-box:rtl {
+    border-radius: 0 0 0 52px; 
+  }
+
+/* OVERVIEW */
+.controls-manager, .secondary-monitor-workspaces {
+  spacing: 12px; 
+}
+
+#overviewGroup {
+  background-color: #232323; 
+}
+
+.overview-controls {
+  padding-bottom: 32px; 
+}
+
+/* Window Picker */
+.window-picker {
+  spacing: 6px; 
+}
+
+.window-caption {
+  color: white;
+  background-color: #2c2c2c;
+  border-radius: 99px;
+  padding: 6px 12px; 
+}
