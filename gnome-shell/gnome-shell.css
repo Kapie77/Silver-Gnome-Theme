@@ -1,7 +1,4 @@
-/* Silver Theme 
- By
- Kaplan
-*/
+/* Silver Theme by  Kaplan */
 
 /* Importação das outras partes */
 @import url("panel.css");
@@ -9,8 +6,7 @@
 @import url("calendar.css");
 @import url("notification.css");
 @import url("dock.css");
-
-/* Fim das importações */
+/* ---------------------------- */
 
 /* ====================
     Global Values
