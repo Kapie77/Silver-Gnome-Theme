@@ -1,10 +1,6 @@
-![alpha](https://i.ibb.co/Q3vYc8ft/screenshot.png)
-![alpha](https://i.ibb.co/YFxWMrY7/alpha1.png)
-Alpha
-
+![alpha 2](https://i.ibb.co/zhGvzBf8/alpha2.png)
 ![alpha 2](https://i.ibb.co/b5kcs7nn/alpha2files.png)
 ![alpha 2](https://i.ibb.co/9mzVW4dG/alpha2delete.png)
-Alpha 2
 
 # OTHER LANGUAGES
 [Português](README.pt.md)
